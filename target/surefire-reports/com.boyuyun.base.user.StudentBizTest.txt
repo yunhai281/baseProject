@@ -1,0 +1,82 @@
+-------------------------------------------------------------------------------
+Test set: com.boyuyun.base.user.StudentBizTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.5 sec <<< FAILURE!
+testAdd(com.boyuyun.base.user.StudentBizTest)  Time elapsed: 0.188 sec  <<< ERROR!
+com.dhcc.common.db.DbutilsDataAccessException: execute error
+	at com.dhcc.common.db.BaseDAO.ALLATORIxDEMOxDhccHeBo(ga:532)
+	at com.dhcc.common.db.BaseDAO.ALLATORIxDEMOxDhccHeBo(ga:212)
+	at com.dhcc.common.db.BaseDAO.executeUpdate(ga:296)
+	at com.boyuyun.base.user.dao.jdbc.UserDaoImpl.insert(UserDaoImpl.java:96)
+	at com.boyuyun.base.user.biz.impl.StudentBizImpl.add(StudentBizImpl.java:63)
+	at com.boyuyun.base.user.biz.impl.StudentBizImpl$$FastClassBySpringCGLIB$$d8605773.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at com.boyuyun.common.datasync.DataSyncAspect.cut(DataSyncAspect.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.user.biz.impl.StudentBizImpl$$EnhancerBySpringCGLIB$$4e6e48c5.add(<generated>)
+	at com.boyuyun.base.user.StudentBizTest.testAdd(StudentBizTest.java:36)
+
+testGet(com.boyuyun.base.user.StudentBizTest)  Time elapsed: 0.035 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.user.StudentBizTest.testGet(StudentBizTest.java:128)
+
+testYUpdate(com.boyuyun.base.user.StudentBizTest)  Time elapsed: 0.035 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boyuyun.base.user.StudentBizTest.testYUpdate(StudentBizTest.java:49)
+
+testZDelete(com.boyuyun.base.user.StudentBizTest)  Time elapsed: 0.13 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boyuyun.base.user.dao.jdbc.UserDaoImpl.delete(UserDaoImpl.java:103)
+	at com.boyuyun.base.user.biz.impl.StudentBizImpl.delete(StudentBizImpl.java:79)
+	at com.boyuyun.base.user.biz.impl.StudentBizImpl$$FastClassBySpringCGLIB$$d8605773.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at com.boyuyun.common.datasync.DataSyncAspect.cut(DataSyncAspect.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.user.biz.impl.StudentBizImpl$$EnhancerBySpringCGLIB$$4e6e48c5.delete(<generated>)
+	at com.boyuyun.base.user.StudentBizTest.testZDelete(StudentBizTest.java:67)
+

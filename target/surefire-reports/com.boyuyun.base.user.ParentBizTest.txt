@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.boyuyun.base.user.ParentBizTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.772 sec <<< FAILURE!
+testZDelete(com.boyuyun.base.user.ParentBizTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.user.ParentBizTest.testZDelete(ParentBizTest.java:64)
+

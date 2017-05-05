@@ -1,0 +1,103 @@
+-------------------------------------------------------------------------------
+Test set: com.boyuyun.base.user.TeacherBizTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 6, Skipped: 0, Time elapsed: 0.974 sec <<< FAILURE!
+testAdd(com.boyuyun.base.user.TeacherBizTest)  Time elapsed: 0.18 sec  <<< ERROR!
+com.dhcc.common.db.DbutilsDataAccessException: execute error
+	at com.dhcc.common.db.BaseDAO.ALLATORIxDEMOxDhccHeBo(ga:532)
+	at com.dhcc.common.db.BaseDAO.ALLATORIxDEMOxDhccHeBo(ga:212)
+	at com.dhcc.common.db.BaseDAO.executeUpdate(ga:296)
+	at com.boyuyun.base.user.dao.jdbc.UserDaoImpl.insert(UserDaoImpl.java:96)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl.add(TeacherBizImpl.java:61)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$FastClassBySpringCGLIB$$687d33ec.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at com.boyuyun.common.datasync.DataSyncAspect.cut(DataSyncAspect.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$EnhancerBySpringCGLIB$$8b89b71e.add(<generated>)
+	at com.boyuyun.base.user.TeacherBizTest.testAdd(TeacherBizTest.java:43)
+
+testB_GetListNonePaged(com.boyuyun.base.user.TeacherBizTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.user.TeacherBizTest.testB_GetListNonePaged(TeacherBizTest.java:88)
+
+testC_GetListPaged(com.boyuyun.base.user.TeacherBizTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.user.TeacherBizTest.testC_GetListPaged(TeacherBizTest.java:102)
+
+testE_Get(com.boyuyun.base.user.TeacherBizTest)  Time elapsed: 0.037 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.user.TeacherBizTest.testE_Get(TeacherBizTest.java:135)
+
+testF_GetTeacherList(com.boyuyun.base.user.TeacherBizTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.user.TeacherBizTest.testF_GetTeacherList(TeacherBizTest.java:142)
+
+testGetTeacherNoCount(com.boyuyun.base.user.TeacherBizTest)  Time elapsed: 0.033 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.user.TeacherBizTest.testGetTeacherNoCount(TeacherBizTest.java:161)
+
+testXUpdate(com.boyuyun.base.user.TeacherBizTest)  Time elapsed: 0.035 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boyuyun.base.user.TeacherBizTest.testXUpdate(TeacherBizTest.java:57)
+
+testZDelete(com.boyuyun.base.user.TeacherBizTest)  Time elapsed: 0.134 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boyuyun.base.user.dao.jdbc.UserDaoImpl.delete(UserDaoImpl.java:103)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl.delete(TeacherBizImpl.java:88)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$FastClassBySpringCGLIB$$687d33ec.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at com.boyuyun.common.datasync.DataSyncAspect.cut(DataSyncAspect.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$EnhancerBySpringCGLIB$$8b89b71e.delete(<generated>)
+	at com.boyuyun.base.user.TeacherBizTest.testZDelete(TeacherBizTest.java:73)
+

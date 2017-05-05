@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.boyuyun.base.course.CourseBizTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 7.511 sec <<< FAILURE!
+testGetListNonePaged(com.boyuyun.base.course.CourseBizTest)  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.course.CourseBizTest.testGetListNonePaged(CourseBizTest.java:116)
+
+testGetListPaged(com.boyuyun.base.course.CourseBizTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.course.CourseBizTest.testGetListPaged(CourseBizTest.java:64)
+

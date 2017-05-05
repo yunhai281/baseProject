@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts> 
+  <package name="struts2_org" extends="struts-default" >
+    <action name="org_grade_*" class="com.boyuyun.base.org.action.SchoolGradeAction" method="{1}">
+      <result name="list" type="dispatcher">/WEB-INF/page/admin/org/grade/list.jsp</result>
+      <result name="detail" type="dispatcher">/WEB-INF/page/admin/org/grade/detail.jsp</result>
+      <result name="index" type="dispatcher">/WEB-INF/page/admin/org/grade/index.jsp</result>
+      <result name="view" type="dispatcher">/WEB-INF/page/admin/org/grade/view.jsp</result>
+    </action>
+    <action name="org_class_*" class="com.boyuyun.base.org.action.SchoolClassAction" method="{1}">
+      <result name="list" type="dispatcher">/WEB-INF/page/admin/org/class/list.jsp</result>
+      <result name="detail" type="dispatcher">/WEB-INF/page/admin/org/class/detail.jsp</result>
+      <result name="index" type="dispatcher">/WEB-INF/page/admin/org/class/index.jsp</result>
+      <result name="view" type="dispatcher">/WEB-INF/page/admin/org/class/view.jsp</result>
+    </action>
+    <action name="school_*" class="com.boyuyun.base.org.action.SchoolAction" method="{1}">
+     
+      <result name="schoolSelect" type="dispatcher">/WEB-INF/page/common/school/schoolSelect.jsp</result>
+      <result name="list" type="dispatcher">/WEB-INF/page/admin/org/school/list.jsp</result>
+      <result name="view" type="dispatcher">/WEB-INF/page/admin/org/school/view.jsp</result>
+      <result name="demo" type="dispatcher">/WEB-INF/page/common/school/demo.jsp</result>
+      <result name="toimport" type="dispatcher">/WEB-INF/page/admin/org/school/import.jsp</result>
+    </action>
+     <action name="government_*" class="com.boyuyun.base.org.action.GovernmentAction" method="{1}">
+      <result name="list" type="dispatcher">/WEB-INF/page/admin/org/government/list.jsp</result>
+      <result name="view" type="dispatcher">/WEB-INF/page/admin/org/government/view.jsp</result>
+      <result name="toimport" type="dispatcher">/WEB-INF/page/admin/org/government/import.jsp</result>
+    </action>
+  </package>
+</struts>

@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.boyuyun.base.sys.OperateLogBizTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.199 sec <<< FAILURE!
+testC_GetListPagedCount(com.boyuyun.base.sys.OperateLogBizTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.sys.dao.jdbc.OperateLogDaoImpl.getListPagedCount(OperateLogDaoImpl.java:61)
+	at com.boyuyun.base.sys.biz.impl.OperateLogBizImpl.getListPagedCount(OperateLogBizImpl.java:36)
+	at com.boyuyun.base.sys.biz.impl.OperateLogBizImpl$$FastClassBySpringCGLIB$$2484eb8c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.sys.biz.impl.OperateLogBizImpl$$EnhancerBySpringCGLIB$$51ce06fe.getListPagedCount(<generated>)
+	at com.boyuyun.base.sys.OperateLogBizTest.testC_GetListPagedCount(OperateLogBizTest.java:72)
+
+testD_GetListPaged(com.boyuyun.base.sys.OperateLogBizTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.sys.dao.jdbc.OperateLogDaoImpl.getListPaged(OperateLogDaoImpl.java:25)
+	at com.boyuyun.base.sys.biz.impl.OperateLogBizImpl.getListPaged(OperateLogBizImpl.java:31)
+	at com.boyuyun.base.sys.biz.impl.OperateLogBizImpl$$FastClassBySpringCGLIB$$2484eb8c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.sys.biz.impl.OperateLogBizImpl$$EnhancerBySpringCGLIB$$51ce06fe.getListPaged(<generated>)
+	at com.boyuyun.base.sys.OperateLogBizTest.testD_GetListPaged(OperateLogBizTest.java:58)
+

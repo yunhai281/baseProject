@@ -1,0 +1,27 @@
+/****
+������һЩͨ�����ã�����һЩЧ��������Ե���ҳ����д���
+****/
+[class^=main][class$=font]{
+	cursor:pointer;
+}
+.requirecls{
+	color:red;
+	display:inline-block;
+	height:15px;
+	margin-right:5px;
+	vertical-align:middle;
+}
+.icon-school-add {
+	background-image: url(../../../resources/images/spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-position: -31px -57px;
+	cursor: pointer;
+	position: absolute;
+	top: 11px;
+	right: 150px;
+	color: #c8c8c8;
+	font-size: 17px;
+}

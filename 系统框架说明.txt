@@ -1,0 +1,4 @@
+1、系统使用框架：
+struts+spring+maven
+2、数据库
+mysql

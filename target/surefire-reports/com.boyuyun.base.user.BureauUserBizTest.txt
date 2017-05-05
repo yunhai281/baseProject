@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.boyuyun.base.user.BureauUserBizTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.489 sec <<< FAILURE!
+testZDeleteBueau(com.boyuyun.base.user.BureauUserBizTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	'<>' operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.user.BureauUserBizTest.testZDeleteBueau(BureauUserBizTest.java:56)
+

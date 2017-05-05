@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+       <!-- 事务代理 -->
+	<bean id="dataSourceProxy" class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">  
+        <property name="targetDataSource" ref="dataSource"/> 
+ 	</bean> 
+	<!-- 事务管理采用全局事务和注解事务并存的方式，一般情况下不用在service方法前添加@Transactional注解，如果需要自定义事务，则需要添加，添加后先执行注解事务 -->
+	<!-- 事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<!-- 数据源 -->
+		<property name="dataSource" ref="dataSourceProxy" />
+	</bean>
+	<!--采用注解来管理事务-->
+	<tx:annotation-driven transaction-manager="transactionManager" order="0"/>
+	<!-- 注解式事务与声明式事务并存 -->
+	<!-- 通知 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<!-- 传播行为 -->
+			<tx:method name="save*" propagation="REQUIRED" rollback-for="Exception"/>
+			<tx:method name="create*" propagation="REQUIRED"  rollback-for="Exception"/>
+			<tx:method name="insert*" propagation="REQUIRED"  rollback-for="Exception"/>
+			<tx:method name="add*" propagation="REQUIRED"  rollback-for="Exception"/>
+			<tx:method name="delete*" propagation="REQUIRED"  rollback-for="Exception"/>
+			<tx:method name="update*" propagation="REQUIRED"  rollback-for="Exception"/>
+			<tx:method name="find*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="select*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="get*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="page*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="count*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="*" propagation="REQUIRED" read-only="true" />
+		</tx:attributes>
+	</tx:advice>
+	<!-- 切面 -->
+	<aop:config>
+		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.boyuyun.base.**.biz.*.*(..))" order="1"/>
+	</aop:config>
+</beans>

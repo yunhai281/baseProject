@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.boyuyun.base.user.UserBizTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 1.496 sec <<< FAILURE!
+testAdd(com.boyuyun.base.user.UserBizTest)  Time elapsed: 0.153 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.user.UserBizTest.testAdd(UserBizTest.java:101)
+
+testB_Get(com.boyuyun.base.user.UserBizTest)  Time elapsed: 0.023 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boyuyun.base.user.UserBizTest.testB_Get(UserBizTest.java:66)
+
+testC_SelectByUserName(com.boyuyun.base.user.UserBizTest)  Time elapsed: 0.037 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boyuyun.base.user.UserBizTest.testC_SelectByUserName(UserBizTest.java:35)
+
+testJ_ValidateUserName(com.boyuyun.base.user.UserBizTest)  Time elapsed: 0.227 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.user.UserBizTest.testJ_ValidateUserName(UserBizTest.java:188)
+

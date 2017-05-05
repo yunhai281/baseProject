@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="2" time="0.971" errors="6" skipped="0" tests="10" name="com.boyuyun.base.user.TeacherBizTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\Program Files (x86)\Java\jre\bin"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\workspace\boyuCloud\20170314\baseProject"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\Program Files (x86)\Java\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\happyss\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="E:\workspace\.metadata\.plugins\org.eclipse.m2e.core\launches\m2conf8706243376997565981.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\Program Files (x86)\Java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\oracle\app\oracle\product\11.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\Java\bin;E:\tools\apache-maven-3.0.5\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;D:\Program Files (x86)\Java\jre\bin;C:\cygwin64\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\happyss"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="happyss"/>
+    <property name="java.class.path" value="E:\tools\apache-maven-3.0.5\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\Program Files (x86)\Java\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s E:\tools\apache-maven-3.0.5\conf\settings.xml test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="D:\Program Files (x86)\Java\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\Program Files (x86)\Java\jre\lib\resources.jar;D:\Program Files (x86)\Java\jre\lib\rt.jar;D:\Program Files (x86)\Java\jre\lib\sunrsasign.jar;D:\Program Files (x86)\Java\jre\lib\jsse.jar;D:\Program Files (x86)\Java\jre\lib\jce.jar;D:\Program Files (x86)\Java\jre\lib\charsets.jar;D:\Program Files (x86)\Java\jre\lib\jfr.jar;D:\Program Files (x86)\Java\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\tools\apache-maven-3.0.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.18" classname="com.boyuyun.base.user.TeacherBizTest" name="testAdd">
+    <error message="execute error" type="com.dhcc.common.db.DbutilsDataAccessException">com.dhcc.common.db.DbutilsDataAccessException: execute error
+	at com.dhcc.common.db.BaseDAO.ALLATORIxDEMOxDhccHeBo(ga:532)
+	at com.dhcc.common.db.BaseDAO.ALLATORIxDEMOxDhccHeBo(ga:212)
+	at com.dhcc.common.db.BaseDAO.executeUpdate(ga:296)
+	at com.boyuyun.base.user.dao.jdbc.UserDaoImpl.insert(UserDaoImpl.java:96)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl.add(TeacherBizImpl.java:61)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$FastClassBySpringCGLIB$$687d33ec.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at com.boyuyun.common.datasync.DataSyncAspect.cut(DataSyncAspect.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$EnhancerBySpringCGLIB$$8b89b71e.add(&lt;generated&gt;)
+	at com.boyuyun.base.user.TeacherBizTest.testAdd(TeacherBizTest.java:43)
+</error>
+    <system-err>java.sql.SQLException: Duplicate entry &apos;abcd&apos; for key &apos;PRIMARY&apos; Query:  insert into USER_BASE (ID, AVATAR, EMAIL, MOBILE, NICKNAME, PWD, SEX, ENABLE, USERNAME, USERTYPE, VALIDATEEMAIL, VALIDATEMOBILE, BIRTHDAY, REALNAME, LOGINNAME,pinyin,jianpin,nation,certificateNo)values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)  Parameters: [abcd, null, null, null, null, abcd, 0, true, abcd, 0, false, false, null, abcd, null, null, null, 0, null]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:392)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:695)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:608)
+	at com.dhcc.common.db.i.ALLATORIxDEMOxDhccHeBo(ga:267)
+	at com.dhcc.common.db.i.execute(ga:125)
+	at com.dhcc.common.db.BaseDAO.ALLATORIxDEMOxDhccHeBo(ga:611)
+	at com.dhcc.common.db.BaseDAO.ALLATORIxDEMOxDhccHeBo(ga:212)
+	at com.dhcc.common.db.BaseDAO.executeUpdate(ga:296)
+	at com.boyuyun.base.user.dao.jdbc.UserDaoImpl.insert(UserDaoImpl.java:96)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl.add(TeacherBizImpl.java:61)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$FastClassBySpringCGLIB$$687d33ec.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at com.boyuyun.common.datasync.DataSyncAspect.cut(DataSyncAspect.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$EnhancerBySpringCGLIB$$8b89b71e.add(&lt;generated&gt;)
+	at com.boyuyun.base.user.TeacherBizTest.testAdd(TeacherBizTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</system-err>
+  </testcase>
+  <testcase time="0" classname="com.boyuyun.base.user.TeacherBizTest" name="testB_GetListNonePaged">
+    <error message="Unresolved compilation problem: 
+	&apos;&lt;&gt;&apos; operator is not allowed for source level below 1.7
+" type="java.lang.Error">java.lang.Error: Unresolved compilation problem: 
+	&apos;&lt;&gt;&apos; operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.user.TeacherBizTest.testB_GetListNonePaged(TeacherBizTest.java:88)
+</error>
+  </testcase>
+  <testcase time="0.001" classname="com.boyuyun.base.user.TeacherBizTest" name="testC_GetListPaged">
+    <error message="Unresolved compilation problem: 
+	&apos;&lt;&gt;&apos; operator is not allowed for source level below 1.7
+" type="java.lang.Error">java.lang.Error: Unresolved compilation problem: 
+	&apos;&lt;&gt;&apos; operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.user.TeacherBizTest.testC_GetListPaged(TeacherBizTest.java:102)
+</error>
+  </testcase>
+  <testcase time="0.033" classname="com.boyuyun.base.user.TeacherBizTest" name="testD_GetListPagedCount"/>
+  <testcase time="0.037" classname="com.boyuyun.base.user.TeacherBizTest" name="testE_Get">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.user.TeacherBizTest.testE_Get(TeacherBizTest.java:135)
+</failure>
+  </testcase>
+  <testcase time="0.001" classname="com.boyuyun.base.user.TeacherBizTest" name="testF_GetTeacherList">
+    <error message="Unresolved compilation problem: 
+	&apos;&lt;&gt;&apos; operator is not allowed for source level below 1.7
+" type="java.lang.Error">java.lang.Error: Unresolved compilation problem: 
+	&apos;&lt;&gt;&apos; operator is not allowed for source level below 1.7
+
+	at com.boyuyun.base.user.TeacherBizTest.testF_GetTeacherList(TeacherBizTest.java:142)
+</error>
+  </testcase>
+  <testcase time="0.033" classname="com.boyuyun.base.user.TeacherBizTest" name="testGetTeacherNoCount">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.user.TeacherBizTest.testGetTeacherNoCount(TeacherBizTest.java:161)
+</failure>
+  </testcase>
+  <testcase time="0.035" classname="com.boyuyun.base.user.TeacherBizTest" name="testXUpdate">
+    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at com.boyuyun.base.user.TeacherBizTest.testXUpdate(TeacherBizTest.java:57)
+</error>
+  </testcase>
+  <testcase time="0.517" classname="com.boyuyun.base.user.TeacherBizTest" name="testYAddAndUpdate"/>
+  <testcase time="0.134" classname="com.boyuyun.base.user.TeacherBizTest" name="testZDelete">
+    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at com.boyuyun.base.user.dao.jdbc.UserDaoImpl.delete(UserDaoImpl.java:103)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl.delete(TeacherBizImpl.java:88)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$FastClassBySpringCGLIB$$687d33ec.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:91)
+	at com.boyuyun.common.datasync.DataSyncAspect.cut(DataSyncAspect.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:161)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	at com.boyuyun.base.user.biz.impl.TeacherBizImpl$$EnhancerBySpringCGLIB$$8b89b71e.delete(&lt;generated&gt;)
+	at com.boyuyun.base.user.TeacherBizTest.testZDelete(TeacherBizTest.java:73)
+</error>
+  </testcase>
+</testsuite>

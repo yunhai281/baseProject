@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------------
+Test set: com.boyuyun.base.org.biz.SchoolGradeBizTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 5, Errors: 2, Skipped: 0, Time elapsed: 0.065 sec <<< FAILURE!
+testAdd(com.boyuyun.base.org.biz.SchoolGradeBizTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.org.biz.SchoolGradeBizTest.testAdd(SchoolGradeBizTest.java:76)
+
+testGet(com.boyuyun.base.org.biz.SchoolGradeBizTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.org.biz.SchoolGradeBizTest.testGet(SchoolGradeBizTest.java:121)
+
+testGetListPaged(com.boyuyun.base.org.biz.SchoolGradeBizTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.org.biz.SchoolGradeBizTest.testGetListPaged(SchoolGradeBizTest.java:44)
+
+testGetMaxSortNum(com.boyuyun.base.org.biz.SchoolGradeBizTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boyuyun.base.org.biz.SchoolGradeBizTest.testGetMaxSortNum(SchoolGradeBizTest.java:150)
+
+testGetListPagedCount(com.boyuyun.base.org.biz.SchoolGradeBizTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.org.biz.SchoolGradeBizTest.testGetListPagedCount(SchoolGradeBizTest.java:56)
+
+testGetListByOrgClassCount(com.boyuyun.base.org.biz.SchoolGradeBizTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.boyuyun.base.org.biz.SchoolGradeBizTest.testGetListByOrgClassCount(SchoolGradeBizTest.java:143)
+
+testY_Update(com.boyuyun.base.org.biz.SchoolGradeBizTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boyuyun.base.org.biz.SchoolGradeBizTest.testY_Update(SchoolGradeBizTest.java:90)
+

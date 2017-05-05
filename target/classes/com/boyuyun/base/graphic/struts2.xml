@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="struts2_login" extends="struts-default">
+		<action name="login_*" class="com.boyuyun.base.user.action.LoginAction" method="{1}">
+			<result name="login" type="dispatcher">/WEB-INF/page/admin/login.jsp</result>
+		</action>
+	</package>
+	<package name="struts2_graphic" extends="struts-default">
+		<action name="graphic_*" class="com.boyuyun.base.graphic.action.GraphicAction" method="{1}">
+			<result name="d3" type="dispatcher">/WEB-INF/page/admin/graphic/d3/view.jsp</result>
+			<result name="echart" type="dispatcher">/WEB-INF/page/admin/graphic/echart/view.jsp</result>
+			<result name="highchart" type="dispatcher">/WEB-INF/page/admin/graphic/hightchart/view.jsp</result>
+		</action>
+	</package>
+</struts>

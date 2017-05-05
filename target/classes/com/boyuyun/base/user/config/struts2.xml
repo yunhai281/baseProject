@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="struts2_login" extends="struts-default">
+		<action name="login_*" class="com.boyuyun.base.user.action.LoginAction" method="{1}">
+			<result name="login" type="dispatcher">/WEB-INF/page/admin/login.jsp</result>
+		</action>
+	</package>
+	<package name="struts2_user" extends="struts-default">
+		<action name="teacher_*" class="com.boyuyun.base.user.action.TeacherAction" method="{1}">
+			<result name="toView" type="dispatcher">/WEB-INF/page/admin/user/teacher/view.jsp</result>
+			<result name="toList" type="dispatcher">/WEB-INF/page/admin/user/teacher/list.jsp</result>
+			<result name="toDetail" type="dispatcher">/WEB-INF/page/admin/user/teacher/detail.jsp</result>
+			<result name="toimport" type="dispatcher">/WEB-INF/page/admin/user/teacher/import.jsp</result>
+			<result name="userSelect" type="dispatcher">/WEB-INF/page/common/user/userSelect.jsp</result>
+		</action>
+		<action name="student_*" class="com.boyuyun.base.user.action.StudentAction" method="{1}">
+			<result name="toView" type="dispatcher">/WEB-INF/page/admin/user/student/view.jsp</result>
+			<result name="toList" type="dispatcher">/WEB-INF/page/admin/user/student/list.jsp</result>
+			<result name="toDetail" type="dispatcher">/WEB-INF/page/admin/user/student/detail.jsp</result>
+			<result name="toImport" type="dispatcher">/WEB-INF/page/admin/user/student/import.jsp</result>
+		</action>
+		<action name="user_*" class="com.boyuyun.base.user.action.UserAction" method="{1}">
+			<result name="toModify" type="dispatcher">/WEB-INF/page/admin/user/modify.jsp</result>
+        	<result name="demo" type="dispatcher">/WEB-INF/page/common/user/demo.jsp</result>
+        	<result name="toView" type="dispatcher">/WEB-INF/page/admin/user/admin/view.jsp</result>
+			<result name="toList" type="dispatcher">/WEB-INF/page/admin/user/admin/list.jsp</result>
+			<result name="toDetail" type="dispatcher">/WEB-INF/page/admin/user/admin/detail.jsp</result>
+			
+		</action>
+	</package>
+	<package name="struts2_bureau" extends="struts-default">
+		<action name="bureau_*" class="com.boyuyun.base.user.action.BureauUserAction" method="{1}">
+			<result name="toList" type="dispatcher">/WEB-INF/page/admin/user/bureau/list.jsp</result>
+			<result name="toView" type="dispatcher">/WEB-INF/page/admin/user/bureau/view.jsp</result>
+			<result name="toDetail" type="dispatcher">/WEB-INF/page/admin/user/bureau/detail.jsp</result>
+			<result name="toSelectbureau" type="dispatcher">/WEB-INF/page/admin/user/bureau/selectbureau.jsp</result>
+			<result name="toSelectList" type="dispatcher">/WEB-INF/page/admin/user/bureau/selectbureau.jsp</result>
+			<result name="toimport" type="dispatcher">/WEB-INF/page/admin/user/bureau/import.jsp</result>
+		</action>
+	</package>
+	<package name="struts2_parent" extends="struts-default">
+		<action name="parent_*" class="com.boyuyun.base.user.action.ParentAction" method="{1}">
+			<result name="toList" type="dispatcher">/WEB-INF/page/admin/user/parent/list.jsp</result>
+			<result name="toView" type="dispatcher">/WEB-INF/page/admin/user/parent/view.jsp</result>
+			<result name="toDetail" type="dispatcher">/WEB-INF/page/admin/user/parent/detail.jsp</result>
+			<result name="toSelectbureau" type="dispatcher">/WEB-INF/page/admin/user/parent/selectbureau.jsp</result>
+		</action>
+	</package>
+</struts>

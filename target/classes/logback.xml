@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds"><!-- SCAN是否自动更新修改后的配置文件，scanPeriod扫描间隔时间 -->
+	<!-- 控制台输出 -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender" level="DEBUG">
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 时间滚动输出 level为 DEBUG 日志 -->
+    <appender name="file-debug"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${catalina.base}/logs/byybase_debug.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 时间滚动输出 level为 INFO 日志 -->
+    <appender name="file-info"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${catalina.base}/logs/byybase_info.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 时间滚动输出 level为 WARN 日志 -->
+    <appender name="file-warn"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+       		<maxHistory>60</maxHistory>
+            <FileNamePattern>${catalina.base}/logs/byybase_warn.%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <!-- 时间滚动输出 level为 ERROR 日志 -->
+    <appender name="file-error"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+       		<maxHistory>60</maxHistory>
+            <FileNamePattern>${catalina.base}/logs/byybase_error.%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 时间滚动输出 level为 ERROR 日志 -->
+    <appender name="file-bpm"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+       		<maxHistory>60</maxHistory>
+            <FileNamePattern>${catalina.base}/logs/byybase_bpm.%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+	<!-- 业务包日志级别设置 -->
+	<logger name="com.dhcc" level="INFO" additivity="false">
+		<appender-ref ref="file-bpm" />
+		<appender-ref ref="stdout" />
+	</logger>
+
+	<logger name="com.dhcc.bpm.scheduler" additivity="false" level="INFO">
+		<appender-ref ref="stdout" />
+		<appender-ref ref="file-bpm" />
+	</logger>
+	
+	<logger name="org.springframework.jdbc.core.JdbcTemplate" additivity="true" level="WARN">
+		<appender-ref ref="stdout" />
+		<appender-ref ref="file-debug" />
+        <appender-ref ref="file-info" />
+        <appender-ref ref="file-warn" />
+        <appender-ref ref="file-error" />
+	</logger>
+
+
+	<logger name="com.dhcc.common.cache.ehcache.listener.CacheEventLoggerListener" additivity="true" level="DEBUG" />
+
+	<!-- 下面配置一些第三方包的日志过滤级别，用于避免刷屏 -->
+	<logger name="org.activiti" level="ERROR" />
+	<logger name="com.opensymphony" level="ERROR" />
+	<logger name="org.apache" level="ERROR" />
+	<logger name="com.atomikos" level="ERROR" />
+	<logger name="org.quartz" level="ERROR" />
+	<logger name="net.sf.json" level="ERROR" />
+	<logger name="net.sf.ehcache" level="ERROR" />
+	<logger name="com.gargoylesoftware.htmlunit" level="ERROR" />
+	<logger name="bitronix" level="ERROR" />
+	<logger name="com.alibaba.druid.pool.PreparedStatementPool" level="ERROR" additivity="false">
+		<appender-ref ref="file-debug" />
+        <appender-ref ref="file-info" />
+        <appender-ref ref="file-warn" />
+        <appender-ref ref="file-error" />
+	</logger>
+	<logger name="com.opensymphony.xwork2.interceptor.ParametersInterceptor" level="ERROR" additivity="false">
+		<appender-ref ref="file-debug" />
+        <appender-ref ref="file-info" />
+        <appender-ref ref="file-warn" />
+        <appender-ref ref="file-error" />
+	</logger>
+
+	<!-- 需要记录日志的包 -->
+	<logger name="org.springframework" level="WARN" />
+	
+	<!-- 根目录日志级别设置 -->
+	<root level="DEBUG">
+		<appender-ref ref="stdout" />
+        <appender-ref ref="file-debug" />
+        <appender-ref ref="file-info" />
+        <appender-ref ref="file-warn" />
+        <appender-ref ref="file-error" />
+	</root>
+</configuration>

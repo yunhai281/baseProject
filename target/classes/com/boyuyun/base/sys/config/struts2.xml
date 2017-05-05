@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts> 
+  <package name="struts2_admin" extends="struts-default" >
+    <action name="admin_*" class="com.boyuyun.base.sys.action.AdminAction" method="{1}">
+      <result name="index" type="dispatcher">/WEB-INF/page/admin/index.jsp</result>
+    </action>
+     <action name="menu_*" class="com.boyuyun.base.sys.action.MenuAction" method="{1}">
+      <result name="list" type="dispatcher">/WEB-INF/page/admin/sys/menu/list.jsp</result>
+      <result name="view" type="dispatcher">/WEB-INF/page/admin/sys/menu/view.jsp</result>
+    </action>
+    <action name="area_*" class="com.boyuyun.base.sys.action.AreaAction" method="{1}">
+    	<result name="toView" type="dispatcher">/WEB-INF/page/admin/sys/area/view.jsp</result>
+    </action>
+    <action name="dictionary_*" class="com.boyuyun.base.sys.action.DictionaryAction" method="{1}">
+    	<result name="toList" type="dispatcher">/WEB-INF/page/admin/sys/dictionary/list.jsp</result>
+    	<result name="toAdd" type="dispatcher">/WEB-INF/page/admin/sys/dictionary/view.jsp</result>
+    </action>
+    <action name="sys_grade_*" class="com.boyuyun.base.sys.action.SysGradeAction" method="{1}">
+    	<result name="toList" type="dispatcher">/WEB-INF/page/admin/sys/grade/list.jsp</result>
+    	<result name="toView" type="dispatcher">/WEB-INF/page/admin/sys/grade/view.jsp</result>
+    	<result name="toEdit" type="dispatcher">/WEB-INF/page/admin/sys/grade/add.jsp</result>
+    </action>
+    <action name="course_*" class="com.boyuyun.base.course.action.CourseAction" method="{1}">
+        <result name="detail" type="dispatcher">/WEB-INF/page/admin/sys/course/detail.jsp</result>
+        <result name="toList" type="dispatcher">/WEB-INF/page/admin/sys/course/list.jsp</result>
+        <result name="toView" type="dispatcher">/WEB-INF/page/admin/sys/course/view.jsp</result>
+	</action>
+	<action name="teachercourse_*" class="com.boyuyun.base.course.action.TeacherCourseAction" method="{1}">
+	</action>
+	<action name="sysParam_*" class="com.boyuyun.base.sys.action.SysParamAction" method="{1}">
+        <result name="view" type="dispatcher">/WEB-INF/page/admin/sys/param/view.jsp</result>
+	</action>
+	<action name="operateLog_*" class="com.boyuyun.base.sys.action.OperateLogAction" method="{1}">
+		<result name="toList" type="dispatcher">/WEB-INF/page/admin/sys/operateLog/list.jsp</result>
+	</action>
+  </package>
+</struts>
