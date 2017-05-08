@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.boyuyun.common.junit.SpringJunitTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
 initializationError(com.boyuyun.common.junit.SpringJunitTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.Exception: No runnable methods
 	at org.junit.runners.BlockJUnit4ClassRunner.validateInstanceMethods(BlockJUnit4ClassRunner.java:191)
@@ -10,7 +10,7 @@ java.lang.Exception: No runnable methods
 	at org.junit.runners.ParentRunner.<init>(ParentRunner.java:84)
 	at org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:65)
 	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:104)
-	at sun.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
 	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)

@@ -335,10 +335,17 @@
 			<artifactId>dhcc-dbutil</artifactId>
 			<version>1.6</version>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>com.dhcc</groupId>
 			<artifactId>framework</artifactId>
 			<version>20170323</version>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>com.dhcc</groupId>
+			<artifactId>framework</artifactId>
+			<version>20170321-nolicense</version>
 		</dependency>
 		<dependency>
 			<groupId>com.dhcc</groupId>

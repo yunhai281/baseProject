@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\workspace\boyuCloud\20170314\baseProject"/>
+    <property name="user.dir" value="E:\workspace\boyuCloud\20170314\baseProject\baseProject"/>
     <property name="java.runtime.version" value="1.7.0_79-b15"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="D:\Program Files (x86)\Java\jre\lib\endorsed"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="E:\workspace\.metadata\.plugins\org.eclipse.m2e.core\launches\m2conf8706243376997565981.tmp"/>
+    <property name="classworlds.conf" value="E:\workspace\.metadata\.plugins\org.eclipse.m2e.core\launches\m2conf1385808616298090260.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="D:\Program Files (x86)\Java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\oracle\app\oracle\product\11.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\Java\bin;E:\tools\apache-maven-3.0.5\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;D:\Program Files (x86)\Java\jre\bin;C:\cygwin64\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;."/>
+    <property name="java.library.path" value="D:\Program Files (x86)\Java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\oracle\app\oracle\product\11.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\Java\bin;E:\tools\apache-maven-3.3.9\bin;D:\Program Files (x86)\Java\jre\bin;C:\cygwin64\bin;C:\Program Files\MySQL\MySQL Server 5.6\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -68,7 +68,7 @@
 	at org.junit.runners.ParentRunner.&lt;init&gt;(ParentRunner.java:84)
 	at org.junit.runners.BlockJUnit4ClassRunner.&lt;init&gt;(BlockJUnit4ClassRunner.java:65)
 	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.&lt;init&gt;(SpringJUnit4ClassRunner.java:104)
-	at sun.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
 	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)

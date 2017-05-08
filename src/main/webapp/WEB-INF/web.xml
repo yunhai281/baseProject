@@ -3,7 +3,7 @@
   <display-name>博育云基础数据平台</display-name>
   <context-param>
     <param-name>webAppRootKey</param-name>
-    <param-value>ByyBase.root</param-value>
+    <param-value>BaseProject.root</param-value>
   </context-param>
   <context-param>
     <param-name>contextConfigLocation</param-name>

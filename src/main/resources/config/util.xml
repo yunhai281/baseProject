@@ -12,5 +12,5 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
        
-	<bean id="SpringContextUtil" class="com.dhcc.common.spring3.SpringContextUtil" scope="singleton"></bean>
+	<bean id="SpringContextUtil" class="com.boyuyun.common.util.context.SpringContextUtil" scope="singleton"></bean>
 </beans>
