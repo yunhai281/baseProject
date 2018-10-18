@@ -11,7 +11,7 @@
 	<properties>
 		<junit-version>4.12</junit-version>
 		<!-- spring版本号 -->
-		<spring.version>3.2.11.RELEASE</spring.version>
+		<spring.version>4.3.18.RELEASE</spring.version>
 		<struts.version>2.3.32</struts.version>
 		<aspectj.version>1.8.3</aspectj.version>
 		<!-- log4j日志文件管理包版本 -->
